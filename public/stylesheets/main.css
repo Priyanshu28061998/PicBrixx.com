@@ -1,0 +1,41 @@
+.thumbnail img{
+	width: 100%;
+}
+
+.thumbnail{
+	padding: 0;
+}
+
+.thumbnail .caption-full{
+	padding: 9px;
+}
+
+#delete-form{
+	display: inline;
+}
+
+#section-a{
+  padding:20px;
+  background:#9c9fa3;
+  color:#fff;
+  text-align:center;
+}
+
+#section-b{
+  padding:20px;
+  background:#dce0e5;
+  text-align:center;
+}
+
+#section-c{
+  display:flex;
+}
+
+#section-c div{
+  padding:20px;
+}
+
+#section-c .box-1, #section-c .box-3{
+  background:#9c9fa3;
+  color:#fff;
+}

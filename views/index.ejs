@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1 align="center">This is Show Page</h1>
+            <p align="center">View all the Albums across the globe!!</p>
+            <hr class="my-4">
+            <p><a href="campgrounds/new"><button type="button" class="btn btn-primary">Add New Album</button></a></p>
+        </div>
+    </header>
+    
+<div class="row text-center" style="display: flex;flex-wrap: wrap;">
+<% campgrounds.forEach(function(campground){ %>
+   <div class="col-md-4 col-sm-6">
+       <div class="img-thumbnail">
+           <img src="<%=campground.image %>" width="304" height="236" >
+           <div class="caption">
+               <h5 align="center"><%=campground.name %></h5>
+               <p align="center"><a href="/campgrounds/<%=campground._id%>"  class="btn btn-primary">More Info</a></p>
+           </div>
+       </div>
+       
+   </div>
+<% });  %>
+</div>
+</div>
+
+<% include partials/footer %>
